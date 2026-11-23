@@ -59,9 +59,6 @@
       <a name="labelfont" val="SansSerif plain 12"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(130,280)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
     <comp lib="0" loc="(150,160)" name="Tunnel">
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 12"/>
@@ -194,10 +191,7 @@
     <comp loc="(960,140)" name="Memory"/>
     <wire from="(1180,160)" to="(1210,160)"/>
     <wire from="(120,160)" to="(150,160)"/>
-    <wire from="(120,240)" to="(130,240)"/>
-    <wire from="(130,280)" to="(140,280)"/>
-    <wire from="(140,240)" to="(140,280)"/>
-    <wire from="(140,240)" to="(150,240)"/>
+    <wire from="(120,240)" to="(150,240)"/>
     <wire from="(370,160)" to="(400,160)"/>
     <wire from="(370,200)" to="(400,200)"/>
     <wire from="(370,240)" to="(400,240)"/>
