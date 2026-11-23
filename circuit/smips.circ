@@ -5824,66 +5824,66 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <rect fill="none" height="340" stroke="#000000" width="515" x="47" y="51"/>
-      <polyline fill="none" points="91,391 111,373 132,391" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="111" y="363">CLK</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="191" y="378">RESET</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="257" y="376">MEM_RDATA</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="92" y="99">ENABLE PC</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="80">ENABLE IR</text>
+      <rect fill="none" height="391" stroke="#000000" width="589" x="47" y="51"/>
+      <polyline fill="none" points="91,441 111,423 132,441" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="410">CLK</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="180" y="424">RESET</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="252" y="421">MEM_RDATA</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="119">ENABLE PC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="89">ENABLE IR</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="112" y="60">ENABLE Result ALU</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="120">ENABLE MDR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="24" text-anchor="middle" x="268" y="203">DataPath</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="328" y="377">ALU Op</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="160">SEL DATA RF</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="112" y="179">SEL WRITE SEL RF</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="200">SEL ALU A</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="220">SEL ALU B</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="239">SEL PROX PC</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="258">SEL ADDR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="280">SEL EXTIMM</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="300">SEL ALU OP</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="392" y="377">IS_BYTE</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="459" y="377">IS LBU</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="520" y="376">IS SYSCALL</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="516" y="68">MEM ADDR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="520" y="158">TTY DATA</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="513" y="100">MEM WDATA</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="527" y="129">MEM BE</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="535" y="199">OP IR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="524" y="239">FUNCT IR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="535" y="337">RS</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="535" y="359">RT</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="525" y="279">Flag Zero</text>
-      <circ-anchor facing="east" x="560" y="210"/>
-      <circ-port dir="in" pin="150,650" x="330" y="390"/>
-      <circ-port dir="in" pin="170,450" x="50" y="300"/>
-      <circ-port dir="in" pin="170,500" x="50" y="240"/>
-      <circ-port dir="in" pin="170,550" x="50" y="260"/>
-      <circ-port dir="in" pin="240,160" x="250" y="390"/>
-      <circ-port dir="in" pin="240,240" x="110" y="390"/>
-      <circ-port dir="in" pin="240,290" x="190" y="390"/>
-      <circ-port dir="in" pin="330,650" x="390" y="390"/>
-      <circ-port dir="in" pin="510,650" x="460" y="390"/>
-      <circ-port dir="in" pin="620,150" x="50" y="80"/>
-      <circ-port dir="in" pin="620,200" x="50" y="100"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="149">ENABLE MDR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="27" font-weight="bold" text-anchor="middle" x="326" y="229">DataPath</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="328" y="421">ALU Op</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="178">SEL DATA RF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="111" y="209">SEL WRITE SEL RF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="240">SEL ALU A</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="268">SEL ALU B</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="299">SEL PROX PC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="330">SEL ADDR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="359">SEL EXTIMM</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="93" y="390">SEL ALU OP</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="385" y="421">IS_BYTE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="457" y="424">IS LBU</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="523" y="425">IS SYSCALL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="592" y="108">MEM ADDR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="602" y="199">TTY DATA</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="589" y="140">MEM WDATA</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="606" y="170">MEM BE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="613" y="240">OP IR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="603" y="271">FUNCT IR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="619" y="370">RS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="619" y="399">RT</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="604" y="319">Flag Zero</text>
+      <circ-anchor facing="east" x="640" y="220"/>
+      <circ-port dir="in" pin="150,650" x="330" y="440"/>
+      <circ-port dir="in" pin="170,450" x="50" y="390"/>
+      <circ-port dir="in" pin="170,500" x="50" y="300"/>
+      <circ-port dir="in" pin="170,550" x="50" y="330"/>
+      <circ-port dir="in" pin="240,160" x="250" y="440"/>
+      <circ-port dir="in" pin="240,240" x="110" y="440"/>
+      <circ-port dir="in" pin="240,290" x="180" y="440"/>
+      <circ-port dir="in" pin="330,650" x="390" y="440"/>
+      <circ-port dir="in" pin="510,650" x="460" y="440"/>
+      <circ-port dir="in" pin="620,150" x="50" y="90"/>
+      <circ-port dir="in" pin="620,200" x="50" y="120"/>
       <circ-port dir="in" pin="620,250" x="50" y="60"/>
-      <circ-port dir="in" pin="620,300" x="50" y="120"/>
-      <circ-port dir="in" pin="620,350" x="50" y="180"/>
-      <circ-port dir="in" pin="620,400" x="50" y="160"/>
-      <circ-port dir="in" pin="620,450" x="520" y="390"/>
-      <circ-port dir="in" pin="620,500" x="50" y="220"/>
-      <circ-port dir="in" pin="620,550" x="50" y="200"/>
-      <circ-port dir="in" pin="690,650" x="50" y="280"/>
-      <circ-port dir="out" pin="1560,1320" x="560" y="100"/>
-      <circ-port dir="out" pin="1910,1150" x="560" y="70"/>
-      <circ-port dir="out" pin="1920,1230" x="560" y="160"/>
-      <circ-port dir="out" pin="2050,1320" x="560" y="130"/>
-      <circ-port dir="out" pin="2310,1160" x="560" y="280"/>
-      <circ-port dir="out" pin="2350,1290" x="560" y="200"/>
-      <circ-port dir="out" pin="2360,1360" x="560" y="240"/>
-      <circ-port dir="out" pin="2680,1210" x="560" y="340"/>
-      <circ-port dir="out" pin="2680,1320" x="560" y="360"/>
+      <circ-port dir="in" pin="620,300" x="50" y="150"/>
+      <circ-port dir="in" pin="620,350" x="50" y="210"/>
+      <circ-port dir="in" pin="620,400" x="50" y="180"/>
+      <circ-port dir="in" pin="620,450" x="520" y="440"/>
+      <circ-port dir="in" pin="620,500" x="50" y="240"/>
+      <circ-port dir="in" pin="620,550" x="50" y="270"/>
+      <circ-port dir="in" pin="690,650" x="50" y="360"/>
+      <circ-port dir="out" pin="1560,1320" x="640" y="140"/>
+      <circ-port dir="out" pin="1910,1150" x="640" y="110"/>
+      <circ-port dir="out" pin="1920,1230" x="640" y="200"/>
+      <circ-port dir="out" pin="2050,1320" x="640" y="170"/>
+      <circ-port dir="out" pin="2310,1160" x="640" y="320"/>
+      <circ-port dir="out" pin="2350,1290" x="640" y="240"/>
+      <circ-port dir="out" pin="2360,1360" x="640" y="270"/>
+      <circ-port dir="out" pin="2680,1210" x="640" y="370"/>
+      <circ-port dir="out" pin="2680,1320" x="640" y="400"/>
     </appear>
     <comp lib="0" loc="(1010,1310)" name="Tunnel">
       <a name="facing" val="north"/>
