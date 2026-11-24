@@ -49,7 +49,7 @@
   </toolbar>
   <circuit name="Board">
     <a name="circuit" val="Board"/>
-    <a name="simulationFrequency" val="2.0"/>
+    <a name="simulationFrequency" val="64.0"/>
     <comp lib="0" loc="(120,160)" name="Clock">
       <a name="appearance" val="classic"/>
       <a name="label" val="Reloj"/>
@@ -66,9 +66,6 @@
     <comp lib="0" loc="(150,240)" name="Tunnel">
       <a name="label" val="RESET"/>
       <a name="labelfont" val="SansSerif plain 12"/>
-    </comp>
-    <comp lib="0" loc="(350,550)" name="Probe">
-      <a name="appearance" val="NewPins"/>
     </comp>
     <comp lib="0" loc="(370,160)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -195,16 +192,13 @@
     <wire from="(1180,160)" to="(1210,160)"/>
     <wire from="(120,160)" to="(150,160)"/>
     <wire from="(120,240)" to="(150,240)"/>
-    <wire from="(350,550)" to="(400,550)"/>
     <wire from="(370,160)" to="(400,160)"/>
     <wire from="(370,200)" to="(400,200)"/>
     <wire from="(370,240)" to="(400,240)"/>
-    <wire from="(380,610)" to="(400,610)"/>
+    <wire from="(380,610)" to="(420,610)"/>
     <wire from="(380,670)" to="(410,670)"/>
     <wire from="(380,700)" to="(430,700)"/>
     <wire from="(380,740)" to="(440,740)"/>
-    <wire from="(400,550)" to="(400,610)"/>
-    <wire from="(400,610)" to="(420,610)"/>
     <wire from="(410,620)" to="(410,670)"/>
     <wire from="(410,620)" to="(420,620)"/>
     <wire from="(430,630)" to="(430,700)"/>

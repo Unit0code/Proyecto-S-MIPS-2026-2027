@@ -1,0 +1,31 @@
+Ejecutando 19 programas en la placa...
+OK    programs\arithmetic.asm  (5401 ciclos)
+OK    programs\array_sum.asm  (779 ciclos)
+OK    programs\branches.asm  (805 ciclos)
+OK    programs\gcd.asm  (2410 ciclos)
+OK    programs\hello.asm  (269 ciclos)
+FALLO programs\memory.asm  (4151 ciclos)
+  detenido=true (MEM_ADDR final 0x000000d8)
+  esperado (MARS):
+    00001800 00003ffc 8070f00d 0000000d 00000080
+    ffffff80 00000070 ffffffe9 000000e9 807fe911
+    ddccbbaa 12ff5678 00002000 00002008 00003ffc
+  obtenido (TTY):
+    00001800 00003ffc 8070f00d 0000000d 00000080
+    ffffff80 00000070 ffffffe9 000000e9 807fe911
+    000000aa 12ff5678 00002000 00002008 00003ffc
+OK    programs\multiply.asm  (1667 ciclos)
+OK    tests\test_add_sub.asm  (116 ciclos)
+OK    tests\test_generico.asm  (149 ciclos)
+OK    tests\test_inmediatos.asm  (99 ciclos)
+OK    tests\test_jal_jr.asm  (96 ciclos)
+OK    tests\test_logicas.asm  (76 ciclos)
+OK    tests\test_memoria_bytes.asm  (132 ciclos)
+OK    tests\test_memoria_lw_sw.asm  (67 ciclos)
+OK    tests\test_saltos.asm  (158 ciclos)
+OK    tests\test_sb.asm  (65 ciclos)
+OK    tests\test_shifts.asm  (113 ciclos)
+OK    tests\test_slt.asm  (113 ciclos)
+OK    tests\test_zero.asm  (19 ciclos)
+
+18/19 correctos

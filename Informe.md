@@ -194,9 +194,60 @@ La FSM posee 16 estados, cada uno representado como un registro individual, para
 
 ## 7. Tabla de Cobertura de los tests
 
+* SYSCALL 11 y 10 se emplean en todos
+
+| Instrucciones | Casos cubiertos | Archivo |
+| :--- | :--- | :--- |
+| add, sub | Con operandos positivos y con al menos un operando negativo. | test_add_sub.asm |
+| and, or | Con operandos que tengan unos en los 16 bits altos. | test_logicas.asm |
+| slt, slti | Un caso con resultado 1 y otro con 0; al menos uno con operando negativo. | test_slt.asm |
+| sll, srl | Con shamt = 0 y shamt ≠ 0; srl sobre un valor negativo. | test_shifts.asm |
+| addi, addiu, addu | Con un inmediato negativo y mediante las pseudoinstrucciones li (constante entre −2^15 y 2^15−1) y move. | test_inmediatos.asm |
+| andi, ori, lui | Con un inmediato cuyo bit 15 vale 1 (debe extenderse con ceros). | test_inmediatos_logicos.asm |
+| lw, sw | Con desplazamiento positivo y con desplazamiento negativo. | test_memoria_lw_sw.asm |
+| lb, lbu | Sobre un byte cuyo bit 7 vale 1, en al menos dos posiciones distintas dentro de la palabra. | test_memoria_bytes.asm |
+| sb | En las cuatro posiciones de una misma palabra, comprobando después con lw que los otros bytes no cambiaron. | test_sb.asm |
+| beq, bne | Cada uno tomado y no tomado; al menos un salto hacia atrás. | test_saltos.asm |
+| j, jal, jr | Un procedimiento que llama a otro (no hoja), guardando $ra en la pila y retornando correctamente. | test_jal_jr.asm |
+| $zero | Una instrucción que escribe en $zero, comprobando después que sigue valiendo 0. | test_zero.asm |
+| --|Test generico probando todas las instrucciones|test_generico.asm|
+
 ## 8. Resultados obtenidos con run_test.py
 
+* Ejecutando 8 programas en la placa...
+* OK    programs\arithmetic.asm  (5401 ciclos)
+* OK    programs\array_sum.asm  (779 ciclos)
+* OK    programs\branches.asm  (805 ciclos)
+* OK    programs\gcd.asm  (2410 ciclos)
+* OK    programs\hello.asm  (269 ciclos)
+* FALLO programs\memory.asm  (4151 ciclos)
+> detenido=true (MEM_ADDR final 0x000000d8)
+   esperado (MARS):
+   00001800 00003ffc 8070f00d 0000000d 00000080
+    ffffff80 00000070 ffffffe9 000000e9 807fe911
+    ddccbbaa 12ff5678 00002000 00002008 00003ffc
+  obtenido (TTY):
+    00001800 00003ffc 8070f00d 0000000d 00000080
+    ffffff80 00000070 ffffffe9 000000e9 807fe911
+    000000aa 12ff5678 00002000 00002008 00003ffc
+* OK    programs\multiply.asm  (1667 ciclos)
+* OK    tests\test_add_sub.asm  (116 ciclos)
+* OK    tests\test_generico.asm  (149 ciclos)
+* OK    tests\test_inmediatos.asm  (99 ciclos)
+* OK    tests\test_jal_jr.asm  (96 ciclos)
+* OK    tests\test_logicas.asm  (76 ciclos)
+* OK    tests\test_memoria_bytes.asm  (132 ciclos)
+* OK    tests\test_memoria_lw_sw.asm  (67 ciclos)
+* OK    tests\test_saltos.asm  (158 ciclos)
+* OK    tests\test_sb.asm  (65 ciclos)
+* OK    tests\test_shifts.asm  (113 ciclos)
+* OK    tests\test_slt.asm  (113 ciclos)
+* OK    tests\test_zero.asm  (19 ciclos)
+
+18/19 correctos
+
 ### 8.1 Limitantes conocidas
+* Fallo al correr memory.asm, falla en exactamente una salida de los hexadecimales.
 * Accesos no alineados, desbordamiento aritmético y accesos fuera de los 16 KiB (las direcciones se repiten cada 16 KiB).
 * Halle un error en el tester, los caracteres del 0 al 31 en ACSII son caracteres de control o invisibles, Mars los trata de una forma, TTY de Logisim de otra,(Exceptuando el salto de linea codigo 10) o al menos a mi me causaron error a la hora de hacer las comparaciones con la herramienta run_tests.py. Por ello exclui la posibilidad de que se imprimieran dichos caracteres y evitar errores.
 
